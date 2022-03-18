@@ -1,0 +1,22 @@
+[
+  {
+	"icon": "topic.svg",
+  	"text": "Topics Administration",
+  	"uiComponentName": "CmpTopicsAdmin"
+  },
+  {
+	"icon": "edit-svgrepo.svg",
+  	"text": "Quizzes Administration",
+  	"uiComponentName": "CmpQuizzesAdmin"
+  },
+  {
+	"icon": "game-svgrepo.svg",
+  	"text": "Quizzes Games",
+  	"uiComponentName": "CmpListQuizzesGames"
+  },
+  {
+	"icon": "ranking.svg",
+  	"text": "Ranking",
+  	"uiComponentName": "CmpRanking"
+  }
+]

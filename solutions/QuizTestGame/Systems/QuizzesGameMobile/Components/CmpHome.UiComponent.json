@@ -1,0 +1,69 @@
+{
+  "eventsAndFunctions": [
+    {
+      "algorithm": {
+        "parameters": [],
+        "statements": [
+          {
+            "command": "Navigate",
+            "expressionStartModel": "[]",
+            "uiComponentName": "CmpStartGame"
+          }
+        ],
+        "typeReturn": "any",
+        "variables": []
+      },
+      "name": "buttonCreateGame_click"
+    }
+  ],
+  "model": [],
+  "root": {
+    "children": [
+      {
+        "align": "center",
+        "bold": true,
+        "color": "default",
+        "cssClass": "blz-padding-top-large",
+        "name": "labelWelcome",
+        "size": "large",
+        "text": "Welcome to",
+        "widget": "Label"
+      },
+      {
+        "align": "center",
+        "bold": true,
+        "color": "primary",
+        "cssClass": "blz-padding-top-large",
+        "name": "labelQuizzesGame",
+        "size": "x-large",
+        "text": "Quizzes Game",
+        "widget": "Label"
+      },
+      {
+        "align": "center",
+        "color": "info",
+        "cssClass": "blz-padding-top-large blz-padding-right-large blz-padding-left-large blz-padding-bottom-large",
+        "name": "buttonCreateGame",
+        "size": "large",
+        "text": "New Game",
+        "widget": "Button"
+      }
+    ],
+    "cssClass": "fages-bg blz-padding-top-large blz-padding-right-large blz-padding-left-large blz-padding-bottom-large blz-area-warning",
+    "horizontalSeparation": "large",
+    "layout": "container",
+    "verticalSeparation": "large"
+  },
+  "routing": {
+    "path": "/home"
+  },
+  "unused": [
+    {
+      "__internalName": "icon1",
+      "color": "default",
+      "icon": "HD-wallpaper-joystick.svg",
+      "name": "icon1",
+      "widget": "Icon"
+    }
+  ]
+}

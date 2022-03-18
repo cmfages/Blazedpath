@@ -1,0 +1,38 @@
+{
+  "eventsAndFunctions": [],
+  "model": [
+    {
+      "name": "instance",
+      "required": false,
+      "type": "QuizzesMicroservices.Topic"
+    }
+  ],
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "binding": "instance.name",
+            "label": "Name",
+            "name": "txtName",
+            "widget": "TextBox"
+          }
+        ],
+        "cssClass": "blz-padding-top-large",
+        "layout": "container"
+      }
+    ],
+    "cssClass": "blz-area-default",
+    "layout": "container"
+  },
+  "routing": null,
+  "unused": [
+    {
+      "__internalName": "label1",
+      "color": "default",
+      "name": "label1",
+      "text": "CmpTopicEditor",
+      "widget": "Label"
+    }
+  ]
+}

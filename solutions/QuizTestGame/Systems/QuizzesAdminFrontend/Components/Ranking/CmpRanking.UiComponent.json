@@ -1,0 +1,114 @@
+{
+  "eventsAndFunctions": [
+    {
+      "algorithm": {
+        "parameters": [
+          {
+            "name": "args",
+            "type": "ArgsLoadRecords"
+          }
+        ],
+        "statements": [
+          {
+            "command": "Return",
+            "expression": "QuizzesMicroservices.GetRanking()"
+          }
+        ],
+        "typeReturn": "any",
+        "variables": []
+      },
+      "name": "repeaterRanking_loadRecords"
+    },
+    {
+      "algorithm": {
+        "parameters": [],
+        "statements": [
+          {
+            "command": "Refresh",
+            "widgetName": "repeaterRanking"
+          }
+        ],
+        "typeReturn": "any",
+        "variables": []
+      },
+      "name": "main_init"
+    }
+  ],
+  "model": [],
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "align": "left",
+            "attribute": {
+              "color": "default",
+              "icon": "ranking.svg",
+              "name": "iconRanking",
+              "size": "x-large"
+            },
+            "color": "default",
+            "cssClass": "blz-padding-top-large blz-padding-left-large blz-padding-bottom-large",
+            "icon": "ranking.svg",
+            "name": "iconRanking",
+            "size": "x-large",
+            "widget": "Icon"
+          },
+          {
+            "align": "left",
+            "attribute": {
+              "bold": true,
+              "color": "default",
+              "name": "labelRanking",
+              "text": "Ranking"
+            },
+            "bold": true,
+            "color": "default",
+            "cssClass": "blz-padding-left-large",
+            "dock": "previous",
+            "name": "labelRanking",
+            "size": "large",
+            "text": "Ranking",
+            "widget": "Label"
+          }
+        ],
+        "cssClass": "blz-border-top blz-border-right blz-border-left blz-border-bottom blz-border-radius",
+        "layout": "container"
+      },
+      {
+        "children": [
+          {
+            "cardBorder": true,
+            "cardBorderRadius": true,
+            "cardCastShadow": true,
+            "cardSize": "third",
+            "horizontalSeparation": "large",
+            "name": "repeaterRanking",
+            "uiComponentBinding": {
+              "instance": "{record}"
+            },
+            "uiComponentName": "CmpRankingByTopic",
+            "verticalSeparation": "large",
+            "widget": "Repeater"
+          }
+        ],
+        "layout": "container"
+      }
+    ],
+    "cssClass": "blz-padding-top-large blz-padding-right-large blz-padding-left-large blz-area-default",
+    "layout": "container",
+    "verticalSeparation": "large"
+  },
+  "routing": {
+    "path": "/ranking"
+  },
+  "unused": [
+    {
+      "__internalName": "label1",
+      "color": "default",
+      "name": "label1",
+      "text": "CmpRanking",
+      "widget": "Label"
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "items": [
+    {
+      "systemName": "QuizzesGameMobile",
+      "action": "build",
+      "parameters": [
+        {
+          "configParameterName": "MsWaitWhenCorrectAnswer",
+          "value": 1000
+        },
+        {
+          "configParameterName": "MsWaitWhenIncorrectAnswer",
+          "value": 2000
+        }
+      ]
+    },
+    {
+      "systemName": "QuizzesMicroservices",
+      "action": "build",
+      "buildPort": 8888,
+      "parameters": [
+        {
+          "configParameterName": "TotalRoundsPerGame",
+          "value": 5
+        },
+        {
+          "configParameterName": "MaxRankingItemsPerTopic",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "systemName": "QuizzesDatabase",
+      "action": "mock",
+      "mockInitialization": {
+        "records": [
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "History1",
+            "topicId": "History",
+            "question": "¿En qué año finalizó la Segunda Guerra Mundial?",
+            "answer1": "1945",
+            "answer2": "1947",
+            "answer3": "1943",
+            "correctAnswer": 1
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "Sports1",
+            "topicId": "Sports",
+            "question": "¿En qué equipo se encuentra actualmente Lionel Messi?",
+            "answer1": "Barcelona",
+            "answer2": "Paris Saint Germain",
+            "answer3": "Milan",
+            "correctAnswer": 2
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "GeneralKnowledge1",
+            "topicId": "GeneralKnowledge",
+            "question": "¿Cuál de los siguientes colores no pertenece a los semáforos?",
+            "answer1": "Rojo",
+            "answer2": "Verde",
+            "answer3": "Violeta",
+            "correctAnswer": 3
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "ScienceAndNature1",
+            "topicId": "ScienceAndNature",
+            "question": "¿Cuál de los siguientes insectos no es un arácnido?",
+            "answer1": "Araña",
+            "answer2": "Escarabajo",
+            "answer3": "Escorpion",
+            "correctAnswer": 2
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "Entertainment1",
+            "topicId": "Entertainment",
+            "question": "¿En qué año se estreno la película Avengers Endgame?",
+            "answer1": "2018",
+            "answer2": "2020",
+            "answer3": "2019",
+            "correctAnswer": 3
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "History2",
+            "topicId": "History",
+            "question": "¿En qué año finalizó la Primera Guerra Mundial?",
+            "answer1": "1918",
+            "answer2": "1919",
+            "answer3": "1915",
+            "correctAnswer": 1
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "History3",
+            "topicId": "History",
+            "question": "¿En qué año se declaró la Independencia de Argentina?",
+            "answer1": "1817",
+            "answer2": "1815",
+            "answer3": "1816",
+            "correctAnswer": 3
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "History4",
+            "topicId": "History",
+            "question": "¿En qué año fue la Revolución Francesa?",
+            "answer1": "1790",
+            "answer2": "1789",
+            "answer3": "1792",
+            "correctAnswer": 2
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "History5",
+            "topicId": "History",
+            "question": "¿En qué año inició la Revolución Industrial?",
+            "answer1": "1760",
+            "answer2": "1840",
+            "answer3": "1812",
+            "correctAnswer": 1
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "Sports2",
+            "topicId": "Sports",
+            "question": "¿En qué equipo juega Oikawa una vez finalizado el manga de Haikyuu?",
+            "answer1": "UPCN San Juan",
+            "answer2": "Trentino Volley",
+            "answer3": "VKL Novosibirsk",
+            "correctAnswer": 1
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "Sports3",
+            "topicId": "Sports",
+            "question": "¿Quién ganó el Mundial de Futbol en 2006?",
+            "answer1": "Alemania",
+            "answer2": "España",
+            "answer3": "Italia",
+            "correctAnswer": 3
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "Sports4",
+            "topicId": "Sports",
+            "question": "¿Cuál es el equipo mas ganador de España?",
+            "answer1": "Real Madrid",
+            "answer2": "Barcelona",
+            "answer3": "Athletic Club",
+            "correctAnswer": 2
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "Sports5",
+            "topicId": "Sports",
+            "question": "¿Qué número de camiseta es mas emblemática en el Futbol?",
+            "answer1": "5",
+            "answer2": "10",
+            "answer3": "13",
+            "correctAnswer": 2
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "GeneralKnowledge2",
+            "topicId": "GeneralKnowledge",
+            "question": "¿Cuál de los siguientes países no es considerado de \"Primer Mundo\"?",
+            "answer1": "Cánada",
+            "answer2": "Japón",
+            "answer3": "España",
+            "correctAnswer": 3
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "GeneralKnowledge3",
+            "topicId": "GeneralKnowledge",
+            "question": "¿Cuál Pokémon es el emblema de la franquicia?",
+            "answer1": "Cleffairy",
+            "answer2": "Pikachu",
+            "answer3": "Agumon",
+            "correctAnswer": 2
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "GeneralKnowledge4",
+            "topicId": "GeneralKnowledge",
+            "question": "¿Cuál de los siguientes equipos es \"el mejor mundo\"?",
+            "answer1": "Barcelona",
+            "answer2": "River",
+            "answer3": "Boquita",
+            "correctAnswer": 3
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "GeneralKnowledge5",
+            "topicId": "GeneralKnowledge",
+            "question": "¿De qué color es el agua?",
+            "answer1": "Azul",
+            "answer2": "Celeste",
+            "answer3": "Incoloro",
+            "correctAnswer": 3
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "ScienceAndNature2",
+            "topicId": "ScienceAndNature",
+            "question": "¿A qué grupo pertenecen las Orcas?",
+            "answer1": "Mamíferos",
+            "answer2": "Peces",
+            "answer3": "Narvales",
+            "correctAnswer": 1
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "ScienceAndNature3",
+            "topicId": "ScienceAndNature",
+            "question": "¿Qué es una \"Fragata Portuguesa\"?",
+            "answer1": "Una especie de planta acuática",
+            "answer2": "Una especie de medusa",
+            "answer3": "Un tipo de árbol costero",
+            "correctAnswer": 2
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "ScienceAndNature4",
+            "topicId": "ScienceAndNature",
+            "question": "¿De qué color no existe ningun tipo de Delfín?",
+            "answer1": "Rosa",
+            "answer2": "Gris",
+            "answer3": "Azul",
+            "correctAnswer": 3
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "ScienceAndNature5",
+            "topicId": "ScienceAndNature",
+            "question": "¿Cuál es el felino de mayor tamaño?",
+            "answer1": "Tigre",
+            "answer2": "León",
+            "answer3": "Pantera",
+            "correctAnswer": 1
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "Entertainment2",
+            "topicId": "Entertainment",
+            "question": "¿Cuántos personajes protagonistas tuvo la serie Friends al inicio?",
+            "answer1": "5",
+            "answer2": "6",
+            "answer3": "4",
+            "correctAnswer": 2
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "Entertainment3",
+            "topicId": "Entertainment",
+            "question": "¿Quién interpreta, actualmente, a Hulk en el cine?",
+            "answer1": "Edward Norton",
+            "answer2": "Mark Ruffalo",
+            "answer3": "La Mona Gimenez",
+            "correctAnswer": 2
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "Entertainment4",
+            "topicId": "Entertainment",
+            "question": "¿En qué año debutó el grupo 2NE1?",
+            "answer1": "2009",
+            "answer2": "2010",
+            "answer3": "2008",
+            "correctAnswer": 1
+          },
+          {
+            "rdsTableName": "Quiz",
+            "quizId": "Entertainment5",
+            "topicId": "Entertainment",
+            "question": "¿Qué película ganó el Oscar a mejor película en 2015?",
+            "answer1": "Birdman",
+            "answer2": "La la land",
+            "answer3": "The Revenant",
+            "correctAnswer": 1
+          },
+          {
+            "rdsTableName": "Topic",
+            "topicId": "GeneralKnowledge",
+            "name": "General Knowledge"
+          },
+          {
+            "rdsTableName": "Topic",
+            "topicId": "ScienceAndNature",
+            "name": "Science And Nature"
+          },
+          {
+            "rdsTableName": "Topic",
+            "topicId": "Sports",
+            "name": "Sports"
+          },
+          {
+            "rdsTableName": "Topic",
+            "topicId": "History",
+            "name": "History"
+          },
+          {
+            "rdsTableName": "Topic",
+            "topicId": "Entertainment",
+            "name": "Entertainment"
+          }
+        ]
+      }
+    }
+  ]
+}
