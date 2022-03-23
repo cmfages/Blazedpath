@@ -17,7 +17,6 @@
     {
       "systemName": "QuizzesMicroservices",
       "action": "build",
-      "buildPort": 8888,
       "parameters": [
         {
           "configParameterName": "MaxRankingItemsPerTopic",
