@@ -13,16 +13,16 @@
       "y": 279
     },
     {
-      "name": "QuizzesGameMobile",
-      "type": "MobileApp",
-      "x": 355,
-      "y": 161
-    },
-    {
       "name": "QuizzesMicroservices",
       "type": "Microservice",
       "x": 633,
       "y": 280
+    },
+    {
+      "name": "QuizzesWebGame",
+      "type": "WebFrontend",
+      "x": 355,
+      "y": 157
     }
   ],
   "references": [
@@ -31,12 +31,12 @@
       "toSystemName": "QuizzesMicroservices"
     },
     {
-      "fromSystemName": "QuizzesGameMobile",
-      "toSystemName": "QuizzesMicroservices"
-    },
-    {
       "fromSystemName": "QuizzesMicroservices",
       "toSystemName": "QuizzesDatabase"
+    },
+    {
+      "fromSystemName": "QuizzesWebGame",
+      "toSystemName": "QuizzesMicroservices"
     }
   ]
 }

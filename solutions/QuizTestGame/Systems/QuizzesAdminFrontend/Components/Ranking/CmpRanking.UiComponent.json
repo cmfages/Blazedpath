@@ -41,12 +41,6 @@
         "children": [
           {
             "align": "left",
-            "attribute": {
-              "color": "default",
-              "icon": "ranking.svg",
-              "name": "iconRanking",
-              "size": "x-large"
-            },
             "color": "default",
             "cssClass": "blz-padding-top-large blz-padding-left-large blz-padding-bottom-large",
             "icon": "ranking.svg",
@@ -56,12 +50,6 @@
           },
           {
             "align": "left",
-            "attribute": {
-              "bold": true,
-              "color": "default",
-              "name": "labelRanking",
-              "text": "Ranking"
-            },
             "bold": true,
             "color": "default",
             "cssClass": "blz-padding-left-large",
